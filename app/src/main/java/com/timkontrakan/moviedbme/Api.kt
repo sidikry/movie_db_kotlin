@@ -17,4 +17,10 @@ interface Api {
         @Query("api_key") apiKey: String = "14953188405961ad80873021665c9f67",
         @Query("page") page: Int
     ): retrofit2.Call<GetMovieResponse>
+
+    @GET("movie/upcoming")
+    fun getUpcomingMovies(
+        @Query("api_key") apiKey: String = "14953188405961ad80873021665c9f67",
+        @Query("page") page: Int
+    ): retrofit2.Call<GetMovieResponse>
 }
