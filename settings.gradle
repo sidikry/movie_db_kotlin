@@ -1,0 +1,2 @@
+rootProject.name='MovieDbMe'
+include ':app'
